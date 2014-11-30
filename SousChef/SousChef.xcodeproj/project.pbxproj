@@ -1,0 +1,1029 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		294A21DC1A2695AF00C36CE5 /* RecipesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294A21DB1A2695AF00C36CE5 /* RecipesInterfaceController.swift */; };
+		294A21DE1A2695C400C36CE5 /* InitialInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294A21DD1A2695C400C36CE5 /* InitialInterfaceController.swift */; };
+		294A21E01A2695D800C36CE5 /* RecipeDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294A21DF1A2695D800C36CE5 /* RecipeDetailInterfaceController.swift */; };
+		294A21E21A2695E100C36CE5 /* RecipeIngredientsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294A21E11A2695E100C36CE5 /* RecipeIngredientsInterfaceController.swift */; };
+		294A21E41A2695EA00C36CE5 /* RecipeStepsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294A21E31A2695EA00C36CE5 /* RecipeStepsInterfaceController.swift */; };
+		294A21E81A2699A100C36CE5 /* RecipeRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294A21E71A2699A100C36CE5 /* RecipeRowController.swift */; };
+		294B75FE1A24173300BBCE01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294B75FD1A24173300BBCE01 /* AppDelegate.swift */; };
+		294B76031A24173300BBCE01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294B76011A24173300BBCE01 /* Main.storyboard */; };
+		294B76051A24173300BBCE01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 294B76041A24173300BBCE01 /* Images.xcassets */; };
+		294B76081A24173300BBCE01 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 294B76061A24173300BBCE01 /* LaunchScreen.xib */; };
+		296ED0BF1A2A951F00CDD46E /* StepRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296ED0BE1A2A951F00CDD46E /* StepRowController.swift */; };
+		2984B4661A266070003CDE5C /* SousChefKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2984B4651A266070003CDE5C /* SousChefKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2984B4781A266070003CDE5C /* SousChefKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2984B4611A266070003CDE5C /* SousChefKit.framework */; };
+		2984B4791A266070003CDE5C /* SousChefKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2984B4611A266070003CDE5C /* SousChefKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2984B48B1A2660A0003CDE5C /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2984B4811A2660A0003CDE5C /* Ingredient.swift */; };
+		2984B48C1A2660A0003CDE5C /* IngredientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2984B4821A2660A0003CDE5C /* IngredientType.swift */; };
+		2984B48D1A2660A0003CDE5C /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2984B4831A2660A0003CDE5C /* Recipe.swift */; };
+		2984B48E1A2660A0003CDE5C /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 2984B4841A2660A0003CDE5C /* Recipes.json */; };
+		2984B48F1A2660A0003CDE5C /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2984B4861A2660A0003CDE5C /* GroceryList.swift */; };
+		2984B4901A2660A0003CDE5C /* RecipeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2984B4871A2660A0003CDE5C /* RecipeStore.swift */; };
+		2984B4911A2660A0003CDE5C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2984B4881A2660A0003CDE5C /* Theme.swift */; };
+		2984B4921A2660A0003CDE5C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2984B48A1A2660A0003CDE5C /* SwiftyJSON.swift */; };
+		2992543A1A243B3B0073F8AC /* GroceriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299254391A243B3B0073F8AC /* GroceriesController.swift */; };
+		2992543C1A243B440073F8AC /* RecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2992543B1A243B440073F8AC /* RecipesController.swift */; };
+		299254411A243CF70073F8AC /* RecipeStepsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299254401A243CF70073F8AC /* RecipeStepsController.swift */; };
+		299254431A243D030073F8AC /* RecipeIngredientsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299254421A243D030073F8AC /* RecipeIngredientsController.swift */; };
+		299254471A243F4A0073F8AC /* RecipeDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299254461A243F4A0073F8AC /* RecipeDetailController.swift */; };
+		299254491A2440CB0073F8AC /* ViewControllerContainers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299254481A2440CB0073F8AC /* ViewControllerContainers.swift */; };
+		299567681A268A2A006EE6EE /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299567671A268A2A006EE6EE /* WatchKit.framework */; };
+		299567721A268A2A006EE6EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299567711A268A2A006EE6EE /* Images.xcassets */; };
+		299567761A268A2A006EE6EE /* RW Recipes Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = 299567751A268A2A006EE6EE /* RW Recipes Watch App.app */; };
+		2995677D1A268A2A006EE6EE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2995677C1A268A2A006EE6EE /* Interface.storyboard */; };
+		2995677F1A268A2A006EE6EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2995677E1A268A2A006EE6EE /* Images.xcassets */; };
+		299567821A268A2A006EE6EE /* RW Recipes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 299567651A268A2A006EE6EE /* RW Recipes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2995678A1A268A4B006EE6EE /* SousChefKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2984B4611A266070003CDE5C /* SousChefKit.framework */; };
+		2999F8661A2A8CF100A660E9 /* IngredientRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FEC0741A2A8C3800684D80 /* IngredientRowController.swift */; };
+		29C177981A2959AF00FFBA44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2995677E1A268A2A006EE6EE /* Images.xcassets */; };
+		29C1D30B1A25913000A72B5B /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D30A1A25913000A72B5B /* RecipeCell.swift */; };
+		29C1D3311A2591CD00A72B5B /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D3111A2591CD00A72B5B /* MKAnnotationView+WebCache.m */; };
+		29C1D3321A2591CD00A72B5B /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D3131A2591CD00A72B5B /* NSData+ImageContentType.m */; };
+		29C1D3331A2591CD00A72B5B /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D3151A2591CD00A72B5B /* SDImageCache.m */; };
+		29C1D3341A2591CD00A72B5B /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D3171A2591CD00A72B5B /* SDWebImageCompat.m */; };
+		29C1D3351A2591CD00A72B5B /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D3191A2591CD00A72B5B /* SDWebImageDecoder.m */; };
+		29C1D3361A2591CD00A72B5B /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D31B1A2591CD00A72B5B /* SDWebImageDownloader.m */; };
+		29C1D3371A2591CD00A72B5B /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D31D1A2591CD00A72B5B /* SDWebImageDownloaderOperation.m */; };
+		29C1D3381A2591CD00A72B5B /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D31F1A2591CD00A72B5B /* SDWebImageManager.m */; };
+		29C1D3391A2591CD00A72B5B /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D3221A2591CD00A72B5B /* SDWebImagePrefetcher.m */; };
+		29C1D33A1A2591CD00A72B5B /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D3241A2591CD00A72B5B /* UIButton+WebCache.m */; };
+		29C1D33B1A2591CD00A72B5B /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D3261A2591CD00A72B5B /* UIImage+GIF.m */; };
+		29C1D33C1A2591CD00A72B5B /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D3281A2591CD00A72B5B /* UIImage+MultiFormat.m */; };
+		29C1D33D1A2591CD00A72B5B /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D32A1A2591CD00A72B5B /* UIImage+WebP.m */; };
+		29C1D33E1A2591CD00A72B5B /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D32C1A2591CD00A72B5B /* UIImageView+HighlightedWebCache.m */; };
+		29C1D33F1A2591CD00A72B5B /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D32E1A2591CD00A72B5B /* UIImageView+WebCache.m */; };
+		29C1D3401A2591CD00A72B5B /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D3301A2591CD00A72B5B /* UIView+WebCacheOperation.m */; };
+		29C1D3481A25924200A72B5B /* SousChef-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 29C1D3471A25924200A72B5B /* SousChef-Bridging-Header.h */; };
+		29E036251A26A88B004BEFC9 /* GroceryRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E036241A26A88B004BEFC9 /* GroceryRowController.swift */; };
+		29E036271A26A8DA004BEFC9 /* GroceryInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E036261A26A8DA004BEFC9 /* GroceryInterfaceController.swift */; };
+		29E036291A26A96E004BEFC9 /* GroceryTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E036281A26A96E004BEFC9 /* GroceryTypeController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2984B4761A266070003CDE5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 294B75F01A24173300BBCE01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2984B4601A266070003CDE5C;
+			remoteInfo = SousChefKit;
+		};
+		299567771A268A2A006EE6EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 294B75F01A24173300BBCE01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 299567741A268A2A006EE6EE;
+			remoteInfo = "RW Recipes Watch App";
+		};
+		299567801A268A2A006EE6EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 294B75F01A24173300BBCE01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 299567641A268A2A006EE6EE;
+			remoteInfo = "RW Recipes WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2984B4301A265FC5003CDE5C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2984B4791A266070003CDE5C /* SousChefKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		299567891A268A2A006EE6EE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				299567821A268A2A006EE6EE /* RW Recipes WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		294A21DB1A2695AF00C36CE5 /* RecipesInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesInterfaceController.swift; sourceTree = "<group>"; };
+		294A21DD1A2695C400C36CE5 /* InitialInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialInterfaceController.swift; sourceTree = "<group>"; };
+		294A21DF1A2695D800C36CE5 /* RecipeDetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailInterfaceController.swift; sourceTree = "<group>"; };
+		294A21E11A2695E100C36CE5 /* RecipeIngredientsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeIngredientsInterfaceController.swift; sourceTree = "<group>"; };
+		294A21E31A2695EA00C36CE5 /* RecipeStepsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeStepsInterfaceController.swift; sourceTree = "<group>"; };
+		294A21E71A2699A100C36CE5 /* RecipeRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeRowController.swift; sourceTree = "<group>"; };
+		294B75F81A24173300BBCE01 /* SousChef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SousChef.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		294B75FC1A24173300BBCE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		294B75FD1A24173300BBCE01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SousChef/AppDelegate.swift; sourceTree = "<group>"; };
+		294B76021A24173300BBCE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		294B76041A24173300BBCE01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		294B76071A24173300BBCE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		296ED0BE1A2A951F00CDD46E /* StepRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepRowController.swift; sourceTree = "<group>"; };
+		2984B4611A266070003CDE5C /* SousChefKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SousChefKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2984B4641A266070003CDE5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2984B4651A266070003CDE5C /* SousChefKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SousChefKit.h; sourceTree = "<group>"; };
+		2984B4811A2660A0003CDE5C /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		2984B4821A2660A0003CDE5C /* IngredientType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientType.swift; sourceTree = "<group>"; };
+		2984B4831A2660A0003CDE5C /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		2984B4841A2660A0003CDE5C /* Recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
+		2984B4861A2660A0003CDE5C /* GroceryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
+		2984B4871A2660A0003CDE5C /* RecipeStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeStore.swift; sourceTree = "<group>"; };
+		2984B4881A2660A0003CDE5C /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		2984B48A1A2660A0003CDE5C /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		299254391A243B3B0073F8AC /* GroceriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroceriesController.swift; path = SousChef/Controllers/GroceriesController.swift; sourceTree = "<group>"; };
+		2992543B1A243B440073F8AC /* RecipesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipesController.swift; path = SousChef/Controllers/RecipesController.swift; sourceTree = "<group>"; };
+		299254401A243CF70073F8AC /* RecipeStepsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeStepsController.swift; path = SousChef/Controllers/RecipeStepsController.swift; sourceTree = "<group>"; };
+		299254421A243D030073F8AC /* RecipeIngredientsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeIngredientsController.swift; path = SousChef/Controllers/RecipeIngredientsController.swift; sourceTree = "<group>"; };
+		299254461A243F4A0073F8AC /* RecipeDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeDetailController.swift; path = SousChef/Controllers/RecipeDetailController.swift; sourceTree = "<group>"; };
+		299254481A2440CB0073F8AC /* ViewControllerContainers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerContainers.swift; path = SousChef/Extensions/ViewControllerContainers.swift; sourceTree = "<group>"; };
+		299567651A268A2A006EE6EE /* RW Recipes WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RW Recipes WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		299567671A268A2A006EE6EE /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		2995676B1A268A2A006EE6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2995676C1A268A2A006EE6EE /* PushNotificationPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PushNotificationPayload.json; sourceTree = "<group>"; };
+		299567711A268A2A006EE6EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		299567751A268A2A006EE6EE /* RW Recipes Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RW Recipes Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2995677B1A268A2A006EE6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2995677C1A268A2A006EE6EE /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		2995677E1A268A2A006EE6EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		29C1D30A1A25913000A72B5B /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeCell.swift; path = SousChef/Views/RecipeCell.swift; sourceTree = "<group>"; };
+		29C1D3101A2591CD00A72B5B /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
+		29C1D3111A2591CD00A72B5B /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
+		29C1D3121A2591CD00A72B5B /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		29C1D3131A2591CD00A72B5B /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		29C1D3141A2591CD00A72B5B /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		29C1D3151A2591CD00A72B5B /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		29C1D3161A2591CD00A72B5B /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		29C1D3171A2591CD00A72B5B /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		29C1D3181A2591CD00A72B5B /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		29C1D3191A2591CD00A72B5B /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		29C1D31A1A2591CD00A72B5B /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		29C1D31B1A2591CD00A72B5B /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		29C1D31C1A2591CD00A72B5B /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		29C1D31D1A2591CD00A72B5B /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		29C1D31E1A2591CD00A72B5B /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		29C1D31F1A2591CD00A72B5B /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		29C1D3201A2591CD00A72B5B /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		29C1D3211A2591CD00A72B5B /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		29C1D3221A2591CD00A72B5B /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		29C1D3231A2591CD00A72B5B /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		29C1D3241A2591CD00A72B5B /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		29C1D3251A2591CD00A72B5B /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		29C1D3261A2591CD00A72B5B /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		29C1D3271A2591CD00A72B5B /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		29C1D3281A2591CD00A72B5B /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		29C1D3291A2591CD00A72B5B /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		29C1D32A1A2591CD00A72B5B /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		29C1D32B1A2591CD00A72B5B /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		29C1D32C1A2591CD00A72B5B /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		29C1D32D1A2591CD00A72B5B /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		29C1D32E1A2591CD00A72B5B /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		29C1D32F1A2591CD00A72B5B /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		29C1D3301A2591CD00A72B5B /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		29C1D3471A25924200A72B5B /* SousChef-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SousChef-Bridging-Header.h"; sourceTree = "<group>"; };
+		29E036241A26A88B004BEFC9 /* GroceryRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryRowController.swift; sourceTree = "<group>"; };
+		29E036261A26A8DA004BEFC9 /* GroceryInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryInterfaceController.swift; sourceTree = "<group>"; };
+		29E036281A26A96E004BEFC9 /* GroceryTypeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryTypeController.swift; sourceTree = "<group>"; };
+		29FEC0741A2A8C3800684D80 /* IngredientRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IngredientRowController.swift; path = "../RW Recipes Watch App/IngredientRowController.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		294B75F51A24173300BBCE01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2984B4781A266070003CDE5C /* SousChefKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2984B45D1A266070003CDE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		299567621A268A2A006EE6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2995678A1A268A4B006EE6EE /* SousChefKit.framework in Frameworks */,
+				299567681A268A2A006EE6EE /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		294A21D81A268FF500C36CE5 /* Interface Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				294A21DD1A2695C400C36CE5 /* InitialInterfaceController.swift */,
+				294A21DF1A2695D800C36CE5 /* RecipeDetailInterfaceController.swift */,
+				294A21E11A2695E100C36CE5 /* RecipeIngredientsInterfaceController.swift */,
+				294A21E31A2695EA00C36CE5 /* RecipeStepsInterfaceController.swift */,
+				294A21DB1A2695AF00C36CE5 /* RecipesInterfaceController.swift */,
+				29E036261A26A8DA004BEFC9 /* GroceryInterfaceController.swift */,
+			);
+			name = "Interface Controllers";
+			path = "../RW Recipes Watch App";
+			sourceTree = "<group>";
+		};
+		294B75EF1A24173300BBCE01 = {
+			isa = PBXGroup;
+			children = (
+				2995678B1A268AB6006EE6EE /* SousChef */,
+				2984B4621A266070003CDE5C /* SousChefKit */,
+				299567691A268A2A006EE6EE /* RW Recipes WatchKit Extension */,
+				299567791A268A2A006EE6EE /* RW Recipes Watch App */,
+				299567661A268A2A006EE6EE /* Frameworks */,
+				294B75F91A24173300BBCE01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		294B75F91A24173300BBCE01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				294B75F81A24173300BBCE01 /* SousChef.app */,
+				2984B4611A266070003CDE5C /* SousChefKit.framework */,
+				299567651A268A2A006EE6EE /* RW Recipes WatchKit Extension.appex */,
+				299567751A268A2A006EE6EE /* RW Recipes Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		294B75FA1A24173300BBCE01 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29C1D3471A25924200A72B5B /* SousChef-Bridging-Header.h */,
+				294B76041A24173300BBCE01 /* Images.xcassets */,
+				294B76061A24173300BBCE01 /* LaunchScreen.xib */,
+				294B75FB1A24173300BBCE01 /* Supporting Files */,
+			);
+			name = Resources;
+			path = SousChef;
+			sourceTree = "<group>";
+		};
+		294B75FB1A24173300BBCE01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				294B75FC1A24173300BBCE01 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2984B4621A266070003CDE5C /* SousChefKit */ = {
+			isa = PBXGroup;
+			children = (
+				2984B4801A2660A0003CDE5C /* Models */,
+				2984B4841A2660A0003CDE5C /* Recipes.json */,
+				2984B4851A2660A0003CDE5C /* Storage */,
+				2984B4631A266070003CDE5C /* Supporting Files */,
+				2984B4881A2660A0003CDE5C /* Theme.swift */,
+				2984B4891A2660A0003CDE5C /* Vendor */,
+			);
+			path = SousChefKit;
+			sourceTree = "<group>";
+		};
+		2984B4631A266070003CDE5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2984B4651A266070003CDE5C /* SousChefKit.h */,
+				2984B4641A266070003CDE5C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2984B4801A2660A0003CDE5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2984B4811A2660A0003CDE5C /* Ingredient.swift */,
+				2984B4821A2660A0003CDE5C /* IngredientType.swift */,
+				2984B4831A2660A0003CDE5C /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2984B4851A2660A0003CDE5C /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				2984B4861A2660A0003CDE5C /* GroceryList.swift */,
+				2984B4871A2660A0003CDE5C /* RecipeStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		2984B4891A2660A0003CDE5C /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				2984B48A1A2660A0003CDE5C /* SwiftyJSON.swift */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		2992543D1A243BAB0073F8AC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				299254391A243B3B0073F8AC /* GroceriesController.swift */,
+				294B76011A24173300BBCE01 /* Main.storyboard */,
+				299254461A243F4A0073F8AC /* RecipeDetailController.swift */,
+				299254401A243CF70073F8AC /* RecipeStepsController.swift */,
+				299254421A243D030073F8AC /* RecipeIngredientsController.swift */,
+				2992543B1A243B440073F8AC /* RecipesController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2992543F1A243BBD0073F8AC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				294B75FD1A24173300BBCE01 /* AppDelegate.swift */,
+				2992543D1A243BAB0073F8AC /* Controllers */,
+				2992544B1A24438E0073F8AC /* Extensions */,
+				29C1D30D1A25913500A72B5B /* Views */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2992544B1A24438E0073F8AC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				299254481A2440CB0073F8AC /* ViewControllerContainers.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		299567661A268A2A006EE6EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				299567671A268A2A006EE6EE /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		299567691A268A2A006EE6EE /* RW Recipes WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				294A21D81A268FF500C36CE5 /* Interface Controllers */,
+				299567711A268A2A006EE6EE /* Images.xcassets */,
+				2995676A1A268A2A006EE6EE /* Supporting Files */,
+				29FEC0761A2A8C4900684D80 /* Row Controllers */,
+			);
+			path = "RW Recipes WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2995676A1A268A2A006EE6EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2995676B1A268A2A006EE6EE /* Info.plist */,
+				2995676C1A268A2A006EE6EE /* PushNotificationPayload.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		299567791A268A2A006EE6EE /* RW Recipes Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				2995677C1A268A2A006EE6EE /* Interface.storyboard */,
+				2995677E1A268A2A006EE6EE /* Images.xcassets */,
+				2995677A1A268A2A006EE6EE /* Supporting Files */,
+			);
+			path = "RW Recipes Watch App";
+			sourceTree = "<group>";
+		};
+		2995677A1A268A2A006EE6EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2995677B1A268A2A006EE6EE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2995678B1A268AB6006EE6EE /* SousChef */ = {
+			isa = PBXGroup;
+			children = (
+				2992543F1A243BBD0073F8AC /* Classes */,
+				294B75FA1A24173300BBCE01 /* Resources */,
+				29C1D30E1A2591CD00A72B5B /* Vendor */,
+			);
+			name = SousChef;
+			sourceTree = "<group>";
+		};
+		29C1D30D1A25913500A72B5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29C1D30A1A25913000A72B5B /* RecipeCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		29C1D30E1A2591CD00A72B5B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				29C1D30F1A2591CD00A72B5B /* SDWebImage */,
+			);
+			name = Vendor;
+			path = SousChef/Vendor;
+			sourceTree = "<group>";
+		};
+		29C1D30F1A2591CD00A72B5B /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				29C1D3101A2591CD00A72B5B /* MKAnnotationView+WebCache.h */,
+				29C1D3111A2591CD00A72B5B /* MKAnnotationView+WebCache.m */,
+				29C1D3121A2591CD00A72B5B /* NSData+ImageContentType.h */,
+				29C1D3131A2591CD00A72B5B /* NSData+ImageContentType.m */,
+				29C1D3141A2591CD00A72B5B /* SDImageCache.h */,
+				29C1D3151A2591CD00A72B5B /* SDImageCache.m */,
+				29C1D3161A2591CD00A72B5B /* SDWebImageCompat.h */,
+				29C1D3171A2591CD00A72B5B /* SDWebImageCompat.m */,
+				29C1D3181A2591CD00A72B5B /* SDWebImageDecoder.h */,
+				29C1D3191A2591CD00A72B5B /* SDWebImageDecoder.m */,
+				29C1D31A1A2591CD00A72B5B /* SDWebImageDownloader.h */,
+				29C1D31B1A2591CD00A72B5B /* SDWebImageDownloader.m */,
+				29C1D31C1A2591CD00A72B5B /* SDWebImageDownloaderOperation.h */,
+				29C1D31D1A2591CD00A72B5B /* SDWebImageDownloaderOperation.m */,
+				29C1D31E1A2591CD00A72B5B /* SDWebImageManager.h */,
+				29C1D31F1A2591CD00A72B5B /* SDWebImageManager.m */,
+				29C1D3201A2591CD00A72B5B /* SDWebImageOperation.h */,
+				29C1D3211A2591CD00A72B5B /* SDWebImagePrefetcher.h */,
+				29C1D3221A2591CD00A72B5B /* SDWebImagePrefetcher.m */,
+				29C1D3231A2591CD00A72B5B /* UIButton+WebCache.h */,
+				29C1D3241A2591CD00A72B5B /* UIButton+WebCache.m */,
+				29C1D3251A2591CD00A72B5B /* UIImage+GIF.h */,
+				29C1D3261A2591CD00A72B5B /* UIImage+GIF.m */,
+				29C1D3271A2591CD00A72B5B /* UIImage+MultiFormat.h */,
+				29C1D3281A2591CD00A72B5B /* UIImage+MultiFormat.m */,
+				29C1D3291A2591CD00A72B5B /* UIImage+WebP.h */,
+				29C1D32A1A2591CD00A72B5B /* UIImage+WebP.m */,
+				29C1D32B1A2591CD00A72B5B /* UIImageView+HighlightedWebCache.h */,
+				29C1D32C1A2591CD00A72B5B /* UIImageView+HighlightedWebCache.m */,
+				29C1D32D1A2591CD00A72B5B /* UIImageView+WebCache.h */,
+				29C1D32E1A2591CD00A72B5B /* UIImageView+WebCache.m */,
+				29C1D32F1A2591CD00A72B5B /* UIView+WebCacheOperation.h */,
+				29C1D3301A2591CD00A72B5B /* UIView+WebCacheOperation.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		29FEC0761A2A8C4900684D80 /* Row Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				294A21E71A2699A100C36CE5 /* RecipeRowController.swift */,
+				29E036241A26A88B004BEFC9 /* GroceryRowController.swift */,
+				29E036281A26A96E004BEFC9 /* GroceryTypeController.swift */,
+				29FEC0741A2A8C3800684D80 /* IngredientRowController.swift */,
+				296ED0BE1A2A951F00CDD46E /* StepRowController.swift */,
+			);
+			name = "Row Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2984B45E1A266070003CDE5C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2984B4661A266070003CDE5C /* SousChefKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		294B75F71A24173300BBCE01 /* SousChef */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 294B76171A24173400BBCE01 /* Build configuration list for PBXNativeTarget "SousChef" */;
+			buildPhases = (
+				294B75F41A24173300BBCE01 /* Sources */,
+				294B75F51A24173300BBCE01 /* Frameworks */,
+				294B75F61A24173300BBCE01 /* Resources */,
+				2984B4301A265FC5003CDE5C /* Embed Frameworks */,
+				299567891A268A2A006EE6EE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2984B4771A266070003CDE5C /* PBXTargetDependency */,
+				299567811A268A2A006EE6EE /* PBXTargetDependency */,
+			);
+			name = SousChef;
+			productName = SousChef;
+			productReference = 294B75F81A24173300BBCE01 /* SousChef.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2984B4601A266070003CDE5C /* SousChefKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2984B47A1A266070003CDE5C /* Build configuration list for PBXNativeTarget "SousChefKit" */;
+			buildPhases = (
+				2984B45C1A266070003CDE5C /* Sources */,
+				2984B45D1A266070003CDE5C /* Frameworks */,
+				2984B45E1A266070003CDE5C /* Headers */,
+				2984B45F1A266070003CDE5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SousChefKit;
+			productName = SousChefKit;
+			productReference = 2984B4611A266070003CDE5C /* SousChefKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		299567641A268A2A006EE6EE /* RW Recipes WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 299567861A268A2A006EE6EE /* Build configuration list for PBXNativeTarget "RW Recipes WatchKit Extension" */;
+			buildPhases = (
+				299567611A268A2A006EE6EE /* Sources */,
+				299567621A268A2A006EE6EE /* Frameworks */,
+				299567631A268A2A006EE6EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				299567781A268A2A006EE6EE /* PBXTargetDependency */,
+			);
+			name = "RW Recipes WatchKit Extension";
+			productName = "RW Recipes WatchKit Extension";
+			productReference = 299567651A268A2A006EE6EE /* RW Recipes WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		299567741A268A2A006EE6EE /* RW Recipes Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 299567831A268A2A006EE6EE /* Build configuration list for PBXNativeTarget "RW Recipes Watch App" */;
+			buildPhases = (
+				299567731A268A2A006EE6EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RW Recipes Watch App";
+			productName = "RW Recipes Watch App";
+			productReference = 299567751A268A2A006EE6EE /* RW Recipes Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		294B75F01A24173300BBCE01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Ray Wenderlich";
+				TargetAttributes = {
+					294B75F71A24173300BBCE01 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2984B4601A266070003CDE5C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					299567641A268A2A006EE6EE = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					299567741A268A2A006EE6EE = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 294B75F31A24173300BBCE01 /* Build configuration list for PBXProject "SousChef" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 294B75EF1A24173300BBCE01;
+			productRefGroup = 294B75F91A24173300BBCE01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				294B75F71A24173300BBCE01 /* SousChef */,
+				2984B4601A266070003CDE5C /* SousChefKit */,
+				299567641A268A2A006EE6EE /* RW Recipes WatchKit Extension */,
+				299567741A268A2A006EE6EE /* RW Recipes Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		294B75F61A24173300BBCE01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				294B76031A24173300BBCE01 /* Main.storyboard in Resources */,
+				294B76081A24173300BBCE01 /* LaunchScreen.xib in Resources */,
+				294B76051A24173300BBCE01 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2984B45F1A266070003CDE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2984B48E1A2660A0003CDE5C /* Recipes.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		299567631A268A2A006EE6EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C177981A2959AF00FFBA44 /* Images.xcassets in Resources */,
+				299567721A268A2A006EE6EE /* Images.xcassets in Resources */,
+				299567761A268A2A006EE6EE /* RW Recipes Watch App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		299567731A268A2A006EE6EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2995677D1A268A2A006EE6EE /* Interface.storyboard in Resources */,
+				2995677F1A268A2A006EE6EE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		294B75F41A24173300BBCE01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C1D3351A2591CD00A72B5B /* SDWebImageDecoder.m in Sources */,
+				29C1D3381A2591CD00A72B5B /* SDWebImageManager.m in Sources */,
+				29C1D3321A2591CD00A72B5B /* NSData+ImageContentType.m in Sources */,
+				29C1D3341A2591CD00A72B5B /* SDWebImageCompat.m in Sources */,
+				29C1D3401A2591CD00A72B5B /* UIView+WebCacheOperation.m in Sources */,
+				29C1D33D1A2591CD00A72B5B /* UIImage+WebP.m in Sources */,
+				299254411A243CF70073F8AC /* RecipeStepsController.swift in Sources */,
+				29C1D33E1A2591CD00A72B5B /* UIImageView+HighlightedWebCache.m in Sources */,
+				2992543C1A243B440073F8AC /* RecipesController.swift in Sources */,
+				299254471A243F4A0073F8AC /* RecipeDetailController.swift in Sources */,
+				29C1D33A1A2591CD00A72B5B /* UIButton+WebCache.m in Sources */,
+				29C1D3391A2591CD00A72B5B /* SDWebImagePrefetcher.m in Sources */,
+				29C1D3371A2591CD00A72B5B /* SDWebImageDownloaderOperation.m in Sources */,
+				29C1D30B1A25913000A72B5B /* RecipeCell.swift in Sources */,
+				299254491A2440CB0073F8AC /* ViewControllerContainers.swift in Sources */,
+				29C1D33C1A2591CD00A72B5B /* UIImage+MultiFormat.m in Sources */,
+				2992543A1A243B3B0073F8AC /* GroceriesController.swift in Sources */,
+				29C1D3331A2591CD00A72B5B /* SDImageCache.m in Sources */,
+				299254431A243D030073F8AC /* RecipeIngredientsController.swift in Sources */,
+				294B75FE1A24173300BBCE01 /* AppDelegate.swift in Sources */,
+				29C1D33B1A2591CD00A72B5B /* UIImage+GIF.m in Sources */,
+				29C1D3361A2591CD00A72B5B /* SDWebImageDownloader.m in Sources */,
+				29C1D3481A25924200A72B5B /* SousChef-Bridging-Header.h in Sources */,
+				29C1D33F1A2591CD00A72B5B /* UIImageView+WebCache.m in Sources */,
+				29C1D3311A2591CD00A72B5B /* MKAnnotationView+WebCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2984B45C1A266070003CDE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2984B48D1A2660A0003CDE5C /* Recipe.swift in Sources */,
+				2984B48C1A2660A0003CDE5C /* IngredientType.swift in Sources */,
+				2984B48B1A2660A0003CDE5C /* Ingredient.swift in Sources */,
+				2984B4911A2660A0003CDE5C /* Theme.swift in Sources */,
+				2984B48F1A2660A0003CDE5C /* GroceryList.swift in Sources */,
+				2984B4921A2660A0003CDE5C /* SwiftyJSON.swift in Sources */,
+				2984B4901A2660A0003CDE5C /* RecipeStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		299567611A268A2A006EE6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2999F8661A2A8CF100A660E9 /* IngredientRowController.swift in Sources */,
+				294A21E21A2695E100C36CE5 /* RecipeIngredientsInterfaceController.swift in Sources */,
+				294A21DE1A2695C400C36CE5 /* InitialInterfaceController.swift in Sources */,
+				294A21E41A2695EA00C36CE5 /* RecipeStepsInterfaceController.swift in Sources */,
+				294A21DC1A2695AF00C36CE5 /* RecipesInterfaceController.swift in Sources */,
+				29E036271A26A8DA004BEFC9 /* GroceryInterfaceController.swift in Sources */,
+				296ED0BF1A2A951F00CDD46E /* StepRowController.swift in Sources */,
+				29E036251A26A88B004BEFC9 /* GroceryRowController.swift in Sources */,
+				294A21E01A2695D800C36CE5 /* RecipeDetailInterfaceController.swift in Sources */,
+				29E036291A26A96E004BEFC9 /* GroceryTypeController.swift in Sources */,
+				294A21E81A2699A100C36CE5 /* RecipeRowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2984B4771A266070003CDE5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2984B4601A266070003CDE5C /* SousChefKit */;
+			targetProxy = 2984B4761A266070003CDE5C /* PBXContainerItemProxy */;
+		};
+		299567781A268A2A006EE6EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 299567741A268A2A006EE6EE /* RW Recipes Watch App */;
+			targetProxy = 299567771A268A2A006EE6EE /* PBXContainerItemProxy */;
+		};
+		299567811A268A2A006EE6EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 299567641A268A2A006EE6EE /* RW Recipes WatchKit Extension */;
+			targetProxy = 299567801A268A2A006EE6EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		294B76011A24173300BBCE01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				294B76021A24173300BBCE01 /* Base */,
+			);
+			name = Main.storyboard;
+			path = SousChef;
+			sourceTree = "<group>";
+		};
+		294B76061A24173300BBCE01 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				294B76071A24173300BBCE01 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		294B76151A24173400BBCE01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		294B76161A24173400BBCE01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		294B76181A24173400BBCE01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SousChefKit/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = SousChef/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)/SousChef-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		294B76191A24173400BBCE01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SousChefKit/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = SousChef/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PRODUCT_NAME)/SousChef-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		2984B47B1A266070003CDE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SousChefKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2984B47C1A266070003CDE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SousChefKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		299567841A268A2A006EE6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = RW_Recipes_WatchKit_Extension;
+				INFOPLIST_FILE = "RW Recipes Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		299567851A268A2A006EE6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = RW_Recipes_WatchKit_Extension;
+				INFOPLIST_FILE = "RW Recipes Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		299567871A268A2A006EE6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RW Recipes WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		299567881A268A2A006EE6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RW Recipes WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		294B75F31A24173300BBCE01 /* Build configuration list for PBXProject "SousChef" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				294B76151A24173400BBCE01 /* Debug */,
+				294B76161A24173400BBCE01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		294B76171A24173400BBCE01 /* Build configuration list for PBXNativeTarget "SousChef" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				294B76181A24173400BBCE01 /* Debug */,
+				294B76191A24173400BBCE01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2984B47A1A266070003CDE5C /* Build configuration list for PBXNativeTarget "SousChefKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2984B47B1A266070003CDE5C /* Debug */,
+				2984B47C1A266070003CDE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		299567831A268A2A006EE6EE /* Build configuration list for PBXNativeTarget "RW Recipes Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				299567841A268A2A006EE6EE /* Debug */,
+				299567851A268A2A006EE6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		299567861A268A2A006EE6EE /* Build configuration list for PBXNativeTarget "RW Recipes WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				299567871A268A2A006EE6EE /* Debug */,
+				299567881A268A2A006EE6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 294B75F01A24173300BBCE01 /* Project object */;
+}
