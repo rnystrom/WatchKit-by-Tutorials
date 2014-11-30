@@ -13,13 +13,16 @@ class RecipeIngredientsController: UITableViewController {
 
   @IBOutlet weak var bannerView: UIImageView!
   @IBOutlet weak var titleLabel: UILabel!
+  @IBOutlet weak var headerHeightConstraint: NSLayoutConstraint!
 
   var selectedIngredientPaths = [NSIndexPath]()
-
   var recipe: Recipe?
+  var originalHeaderHeight: CGFloat = 0
 
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    originalHeaderHeight = headerHeightConstraint.constant
 
     titleLabel.text = recipe?.name
     if let url = recipe?.imageURL {
@@ -76,6 +79,12 @@ class RecipeIngredientsController: UITableViewController {
       selectedIngredientPaths.append(indexPath)
     }
     tableView.reloadData()
+  }
+
+  // MARK: UIScrollViewDelegate
+
+  override func scrollViewDidScroll(scrollView: UIScrollView) {
+    headerHeightConstraint.constant = originalHeaderHeight - scrollView.contentOffset.y
   }
 
 }

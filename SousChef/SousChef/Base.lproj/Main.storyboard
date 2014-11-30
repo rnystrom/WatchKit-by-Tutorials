@@ -215,9 +215,16 @@
                             <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="goW-R9-aQe">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </view>
                                 <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cJe-Be-qfg">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
-                                    <color key="backgroundColor" white="0.96999999999999997" alpha="0.5" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="150" id="wag-kT-3gC"/>
+                                    </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrn-QY-WtQ">
                                     <rect key="frame" x="20" y="116" width="560" height="23.5"/>
@@ -226,14 +233,16 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="zrn-QY-WtQ" secondAttribute="trailing" constant="20" id="15K-fU-7wK"/>
+                                <constraint firstItem="goW-R9-aQe" firstAttribute="leading" secondItem="epR-wz-5gs" secondAttribute="leading" id="1bX-Fd-ce6"/>
+                                <constraint firstAttribute="trailing" secondItem="goW-R9-aQe" secondAttribute="trailing" id="44e-VR-xIv"/>
                                 <constraint firstItem="zrn-QY-WtQ" firstAttribute="leading" secondItem="epR-wz-5gs" secondAttribute="leading" constant="20" id="4OF-KS-iBA"/>
+                                <constraint firstItem="goW-R9-aQe" firstAttribute="height" secondItem="cJe-Be-qfg" secondAttribute="height" id="7cj-jH-WSk"/>
                                 <constraint firstAttribute="bottom" secondItem="cJe-Be-qfg" secondAttribute="bottom" id="P3v-Qw-6Cb"/>
+                                <constraint firstAttribute="bottom" secondItem="goW-R9-aQe" secondAttribute="bottom" id="ZMr-uQ-vhl"/>
                                 <constraint firstAttribute="trailing" secondItem="cJe-Be-qfg" secondAttribute="trailing" id="lYg-ss-98T"/>
                                 <constraint firstAttribute="bottom" secondItem="zrn-QY-WtQ" secondAttribute="bottom" constant="10" id="nKP-g7-AtW"/>
-                                <constraint firstItem="cJe-Be-qfg" firstAttribute="top" secondItem="epR-wz-5gs" secondAttribute="top" id="t1o-nu-XfQ"/>
                                 <constraint firstItem="cJe-Be-qfg" firstAttribute="leading" secondItem="epR-wz-5gs" secondAttribute="leading" id="wVY-lF-eky"/>
                             </constraints>
                         </view>
@@ -260,6 +269,7 @@
                     </tableView>
                     <connections>
                         <outlet property="bannerView" destination="cJe-Be-qfg" id="y3o-Fp-BcR"/>
+                        <outlet property="headerHeightConstraint" destination="wag-kT-3gC" id="Tr1-rK-6iF"/>
                         <outlet property="titleLabel" destination="zrn-QY-WtQ" id="LKZ-Eh-WHc"/>
                     </connections>
                 </tableViewController>
@@ -323,7 +333,7 @@
     </scenes>
     <resources>
         <image name="bookmark" width="30" height="30"/>
-        <image name="cart" width="30" height="30"/>
+        <image name="cart" width="60" height="60"/>
         <image name="rw" width="30" height="30"/>
     </resources>
 </document>
