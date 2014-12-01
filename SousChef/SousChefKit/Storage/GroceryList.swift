@@ -122,8 +122,10 @@ public class GroceryList {
     var table = GroceryTable()
     for item in itemList {
       if var group = table[item.type] {
-        group.append(item)
-        table[item.type] = group // changing mutable arrays makes a copy in swift, need to reassign
+        if !contains(group, item) {
+          group.append(item)
+          table[item.type] = group // changing mutable arrays makes a copy in swift, need to reassign
+        }
       } else {
         table[item.type] = [item]
       }
