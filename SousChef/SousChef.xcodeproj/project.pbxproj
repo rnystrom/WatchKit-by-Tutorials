@@ -249,7 +249,9 @@
 				299567661A268A2A006EE6EE /* Frameworks */,
 				294B75F91A24173300BBCE01 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		294B75F91A24173300BBCE01 /* Products */ = {
 			isa = PBXGroup;
