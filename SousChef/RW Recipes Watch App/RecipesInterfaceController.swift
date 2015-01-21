@@ -18,11 +18,11 @@ class RecipesInterfaceController: WKInterfaceController {
   override init(context: AnyObject?) {
     super.init(context: context)
 
-    table.setNumberOfRows(recipeStore.recipes.count, withRowType: "RecipeRowType")
-
-    for var i = 0; i < table.numberOfRows; i++ {
-      let controller = table.rowControllerAtIndex(i) as RecipeRowController
-      let recipe = recipeStore.recipes[i]
+    let recipes = recipeStore.recipes
+    table.setNumberOfRows(recipes.count, withRowType: "RecipeRowType")
+    
+    for (index, recipe) in enumerate(recipes) {
+      let controller = table.rowControllerAtIndex(index) as RecipeRowController
       controller.textLabel.setText(recipe.name)
       controller.ingredientsLabel.setText("\(recipe.ingredients.count) ingredients")
     }
