@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Ray Wenderlich. All rights reserved.
 //
 
-import Foundation
 import WatchKit
 
 class RecipeRowController: NSObject {
